@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularControllers</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="App/app.js"></script>
+</head>
+<body>
+    <div ng-app="app" >
+        <h1>
+            Controllers - <small>controlled by:</small>
+        </h1>
+       <div ng-controller="MainCtrl">
+           <p>{{message}}</p>
+        
+
+        <form ng-submit="updateMessage(newMessage)">
+            <input type="text" ng-model="newMessage">
+            <button type="submit">Update Message</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
